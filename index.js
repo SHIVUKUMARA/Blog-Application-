@@ -25,7 +25,7 @@ const password = process.env.DB_PASSWORD;
 Connection(username, password);
 
 // routes
-app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
+// app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
 
 // call all files
 app.get("*", function (req, res) {
