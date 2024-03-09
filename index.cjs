@@ -5,10 +5,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 //components
-import Connection from './database/db.js';
-import Router from './routes/route.js';
-
-
+const Connection = require('./database/db.js');
+const Router = require('./routes/route.js');
 dotenv.config();
 
 const app = express();
