@@ -24,8 +24,8 @@ const password = process.env.DB_PASSWORD;
 
 Connection(username, password);
 
-// routes
-// app.use("/api/v1/portfolio", require("./routes/portfolioRoute"));
+// static files access
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 // call all files
 app.get("*", function (req, res) {
