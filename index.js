@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, "./client/build")));
 
 // call all files
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  res.sendFile(join(__dirname, "./client/build/index.html"));
 });
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
