@@ -30,7 +30,7 @@ const password = process.env.DB_PASSWORD;
 Connection(username, password);
 
 // static files access
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(join(__dirname, "./client/build")));
 
 // call all files
 app.get("*", function (req, res) {
