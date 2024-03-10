@@ -24,4 +24,12 @@ const password = process.env.DB_PASSWORD;
 
 Connection(username, password);
 
+// static files access
+app.use(express.static(path.join(__dirname, "./client/build")));
+
+// call all files
+app.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
