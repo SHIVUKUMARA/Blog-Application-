@@ -1,30 +1,30 @@
-import express from "express";
+const express = require("express");
 
-import {
+const {
   createPost,
   updatePost,
   deletePost,
   getPost,
   getAllPosts,
-} from "../controller/post-controller.js";
-import { uploadImage, getImage } from "../controller/image-controller.js";
-import {
+} = require ("../controller/post-controller.js");
+const { uploadImage, getImage } = require ("../controller/image-controller.js");
+const {
   newComment,
   getComments,
   getAllComments,
   deleteComment,
-} from "../controller/comment-controller.js";
-import {
+} = require("../controller/comment-controller.js");
+const {
   loginUser,
   signupUser,
   logoutUser,
-} from "../controller/user-controller.js";
-import {
+} = require ("../controller/user-controller.js");
+const {
   authenticateToken,
   createNewToken,
-} from "../controller/jwt-controller.js";
+} = require ("../controller/jwt-controller.js");
 
-import upload from "../utils/upload.js";
+const upload = require ("../utils/upload.js");
 
 const router = express.Router();
 
