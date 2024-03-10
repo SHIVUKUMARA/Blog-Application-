@@ -1,9 +1,9 @@
-import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
-import dotenv from 'dotenv';
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const dotenv = require('dotenv');
 
-import Token from '../model/token.js'
-import User from '../model/user.js';
+const Token = require('../model/token.js');
+const User = require('../model/user.js');
 
 dotenv.config();
 
