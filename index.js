@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import { join, dirname } from 'path';
+import path from 'path';
 
 
 //components
