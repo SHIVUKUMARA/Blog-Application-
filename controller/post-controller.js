@@ -1,5 +1,5 @@
 
-import Post from '../model/post.js';
+const Post = require('../model/post.js');
 
 
 export const createPost = async (request, response) => {
