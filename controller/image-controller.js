@@ -1,7 +1,10 @@
-import grid from 'gridfs-stream';
-import mongoose from 'mongoose';
+const Grid = require('gridfs-stream');
+const mongoose = require('mongoose');
+const dotenv = require("dotenv");
 
-const url = 'http://localhost:8000';
+dotenv.config();
+
+const url = process.env.PORT;
 
 
 let gfs, gridfsBucket;
