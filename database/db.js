@@ -10,4 +10,4 @@ const Connection = async (username, password) => {
     }
 };
 
-export default Connection;
+module.exports = Connection;
