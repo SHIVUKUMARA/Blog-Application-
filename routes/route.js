@@ -49,4 +49,4 @@ router.get("/comments/:id", authenticateToken, getComments);
 router.get("/comments", authenticateToken, getAllComments);
 router.delete("/comment/delete/:id", authenticateToken, deleteComment);
 
-export default router;
+module.exports = router;
